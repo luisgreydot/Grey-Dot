@@ -1,0 +1,47 @@
+/*Hace el background se mantenga al 100%*/
+body, html{
+    min-height: 100%;
+}
+
+body{
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #494342),
+    color-stop(1, #561F09)
+    );
+    background-image: -o-linear-gradient(bottom, #494342 0%, #561F09 100%) fixed;
+    background-image: -moz-linear-gradient(bottom, #494342 0%, #561F09 100%) fixed;
+    background-image: -webkit-linear-gradient(bottom, #494342 0%, #561F09 100%) fixed;
+    background-image: -ms-linear-gradient(bottom, #494342 0%, #561F09 100%) fixed;
+    background-image: linear-gradient(to bottom, #494342 0%, #561F09 100%)fixed;
+    width:28000px;
+}
+
+nav
+{
+    margin: -60px 0 0 32%;
+    position: fixed;
+    top:100%;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+section{
+    float:left;
+    margin:0px;
+    width:4000px;
+}
