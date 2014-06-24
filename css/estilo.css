@@ -1,27 +1,83 @@
+/*Agregamos tipografías externas*/
+@font-face {
+    font-family: 'muliregular';
+    src: url('../fonts/muli-regular-webfont.eot');
+    src: url('../fonts/muli-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/muli-regular-webfont.woff') format('woff'),
+         url('../fonts/muli-regular-webfont.ttf') format('truetype'),
+         url('../fonts/muli-regular-webfont.svg#muliregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mulilight';
+    src: url('../fonts/muli-light-webfont.eot');
+    src: url('../fonts/muli-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/muli-light-webfont.woff') format('woff'),
+         url('../fonts/muli-light-webfont.ttf') format('truetype'),
+         url('../fonts/muli-light-webfont.svg#mulilight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mulilight_italic';
+    src: url('../fonts/muli-lightitalic-webfont.eot');
+    src: url('../fonts/muli-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/muli-lightitalic-webfont.woff') format('woff'),
+         url('../fonts/muli-lightitalic-webfont.ttf') format('truetype'),
+         url('../fonts/muli-lightitalic-webfont.svg#mulilight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'arrows';
+    src:url('../fonts/arrows.eot?-vsqfd6');
+    src:url('../fonts/arrows.eot?#iefix-vsqfd6') format('embedded-opentype'),
+        url('../fonts/arrows.woff?-vsqfd6') format('woff'),
+        url('../fonts/arrows.ttf?-vsqfd6') format('truetype'),
+        url('../fonts/arrows.svg?-vsqfd6#arrows') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Se dan de alta las iconfonts*/
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'arrows';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 /*Hace el background se mantenga al 100%*/
 body, html{
     min-height: 100%;
 }
 
 body{
-    background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0, #494342),
-    color-stop(1, #561F09)
-    );
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #494342),color-stop(1, #561F09));
     background-image: -o-linear-gradient(bottom, #494342 0%, #561F09 100%) fixed;
     background-image: -moz-linear-gradient(bottom, #494342 0%, #561F09 100%) fixed;
     background-image: -webkit-linear-gradient(bottom, #494342 0%, #561F09 100%) fixed;
     background-image: -ms-linear-gradient(bottom, #494342 0%, #561F09 100%) fixed;
     background-image: linear-gradient(to bottom, #494342 0%, #561F09 100%)fixed;
+    font-family: 'muliregular';
+    font-size: 16px;
     width:28000px;
 }
 
 nav
 {
-    margin: -60px 0 0 32%;
+    margin: -105px 0 0 32%;
     position: fixed;
     top:100%;
 }
@@ -31,17 +87,76 @@ nav ul{
 }
 
 nav ul li{
-    display: inline-block;
+    background: url(../img/nav_background.png) no-repeat;
+    float: left;
+    height: 69px;
+    overflow: hidden;
+    text-align: center;
     vertical-align: top;
+    width: 82px;
+     -webkit-transition: 1s;
 }
 
-nav ul li a{
-    color:white;
+nav ul li:hover
+{
+    background: url(../img/nav_background_hover.png) no-repeat;
+}
+
+nav ul li a
+{
+    color:rgba(255,255,255,0.3);
+    display: block;
+    font-size: .8em;
+    height: 100%;
+    padding: 38px 0 0 0;
     text-decoration: none;
+    -webkit-transition: 1s;
+}
+
+nav ul li a:hover{
+    color:rgba(255,255,255,1);
 }
 
 section{
     float:left;
     margin:0px;
     width:4000px;
+}
+
+#nav_cierre_der, #nav_cierre_izq
+{   
+    width: 22px;
+}
+
+#nav_cierre_der
+{
+    background: url(../img/nav_cierre_der.png);
+}
+
+#nav_cierre_izq
+{
+    background: url(../img/nav_cierre_izq.png);
+}
+
+.icon-arrow-left:before {
+    content: "\e600";
+}
+.icon-uniE601:before {
+    content: "\e601";
+}
+
+.nav_arrow
+{
+    background: transparent;
+    width: 30px;
+}
+
+.nav_arrow a
+{
+    font-size: 1.2em;
+}
+
+.nav_arrow:hover
+{
+    background: transparent;
 }

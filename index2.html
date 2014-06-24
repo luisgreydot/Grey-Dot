@@ -25,7 +25,7 @@
     background: url(img/como_pensamos_5.png) no-repeat fixed;
 
   }
-  #contenedor{
+  .contenedor{
     width:814px;
     height:773px;
   }
@@ -37,9 +37,10 @@
     position: absolute;
   }
 </style>
+
 <body style="background:#000;">
   <div style="height:500px; width:3000px;">
-    <div id="contenedor">
+    <div class="contenedor">
       <div class="ilustracion" id="como_pensamos_1" data-stellar-background-ratio="5"></div>
       <div class="ilustracion" id="como_pensamos_2" data-stellar-background-ratio="1.5"></div>
       <div class="ilustracion" id="como_pensamos_3" data-stellar-background-ratio="3"></div>
@@ -48,6 +49,16 @@
     </div>
   </div>
 
+  <ul class="ul1">
+    <li class="li1"><span class="s1">Home</span></li>
+    <li class="li1"><span class="s1">Cómo pensamos</span></li>
+    <li class="li1"><span class="s1">Clientes</span></li>
+    <li class="li1"><span class="s1">Galería</span></li>
+    <li class="li1"><span class="s1">Fotografía</span></li>
+    <li class="li1"><span class="s1">Stand</span></li>
+    <li class="li1"><span class="s1">Contacto</span></li>
+  </ul>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="js/vendor/jquery.stellar.js"></script>
 <script>
@@ -55,15 +66,6 @@
       $(window).stellar(); 
   });
 </script>
-<body>
-<ul class="ul1">
-  <li class="li1"><span class="s1">Home</span></li>
-  <li class="li1"><span class="s1">Cómo pensamos</span></li>
-  <li class="li1"><span class="s1">Clientes</span></li>
-  <li class="li1"><span class="s1">Galería</span></li>
-  <li class="li1"><span class="s1">Fotografía</span></li>
-  <li class="li1"><span class="s1">Stand</span></li>
-  <li class="li1"><span class="s1">Contacto</span></li>
-</ul>
+
 </body>
 </html>
