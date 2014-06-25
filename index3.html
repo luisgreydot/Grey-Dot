@@ -4,6 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
   <title>Grey Dot : Agencia de Publicidad</title>
+  <link rel="stylesheet" href="css/vendor/nanoscroller.css">
   <style rel="stylesheet">
     #clientes_cuadro
     {
@@ -11,14 +12,6 @@
       width:500px;
     }
     
-    #clientes_cuadro a
-    {
-      display: inline-block;
-      height: 21px;
-      vertical-align: top;
-      width: 21px;
-    }
-
     #clientes_cuadro article
     {
       display:inline-block;
@@ -30,13 +23,13 @@
     {
       background:#fff;
       height:1px;
-      width:330px;
+      width:295px;
     }
 
     #clientes_cuadro #clientes_lista
     {
-      background: #ccc;
-      overflow: scroll;
+      background: rgba(255,255,255,.5);
+      display: none;
       height: 190px;
       margin: 0 auto;
       width:220px;
@@ -47,17 +40,35 @@
       margin:0;
       padding:0;
     }
+    
+     #clientes_cuadro #toggle_clientes
+    {
+      background: url(img/clientes_boton.png);
+      cursor: pointer;
+      display: inline-block;
+      float: left;
+      height: 21px;
+      -webkit-transition: 1s;
+      transition: 1s;
+      vertical-align: top;
+      width: 21px;
+    }
+
+    #clientes_cuadro #toggle_clientes:hover
+    {
+      background: url(img/clientes_boton_hover.png);
+    }
 
   </style>
 </head>
 
 <body style="background:#000">
     <section id="clientes_cuadro">
-        <a href="#"><img src="img/clientes_boton.png" /></a>
+        <div id="toggle_clientes" href="#"></div>
         <article>
           <div id="separador"></div>
-          <div id="clientes_lista">
-            <ul>
+          <div id="clientes_lista" class="nano">
+            <ul class="nano-content">
               <li>ELEMENTO</li>
               <li>ELEMENTO</li>
               <li>ELEMENTO</li>
@@ -79,7 +90,18 @@
         </article>
     </section>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script></script>
-
+<script src="js/vendor/jquery.nanoscroller.js"></script>
+<script>
+  $(function(){
+      $('.nano').nanoScroller({
+        preventPageScrolling: true
+      });
+    });
+</script>
+<script>
+ $("#toggle_clientes").click(function(){
+    $("#clientes_lista").toggle("showOrHide");
+ });
+</script>
 </body>
 </html>

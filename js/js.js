@@ -15,4 +15,10 @@ $(document).ready(function ($){
         });
     });
 
+    //Cargamos el scroll del cuadro de clientes
+    $(function(){
+      $('.nano').nanoScroller({
+        preventPageScrolling: true
+      });
+    });
 });
