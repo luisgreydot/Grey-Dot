@@ -94,7 +94,7 @@ nav ul li{
     text-align: center;
     vertical-align: top;
     width: 82px;
-     -webkit-transition: 1s;
+    -webkit-transition: 1s;
 }
 
 nav ul li:hover
@@ -113,14 +113,68 @@ nav ul li a
     -webkit-transition: 1s;
 }
 
-nav ul li a:hover{
+nav ul li a:hover
+{
     color:rgba(255,255,255,1);
 }
 
-section{
+section
+{
     float:left;
     margin:0px;
     width:4000px;
+}
+
+#clientes_cuadro
+{
+    height: 280px;
+    width:500px;
+}
+    
+#clientes_cuadro #contenedor_clientes
+{
+    display:inline-block;
+    margin: 10px 0 0 0;
+    vertical-align: top;
+}
+
+#clientes_cuadro #clientes_lista
+{
+    background:rgba(255,255,255,.2);
+    height: 190px;
+    margin: 0 auto;
+    width:220px;
+}
+
+#clientes_cuadro #clientes_lista ul
+{
+    margin:0;
+    padding:0;
+}
+
+#clientes_cuadro #separador
+{
+    background:#fff;
+    height:1px;
+    width:295px;
+}
+
+#clientes_cuadro #toggle_clientes
+{
+    background: url(../img/clientes_boton.png);
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 21px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    vertical-align: top;
+    width: 21px;
+}
+
+#clientes_cuadro #toggle_clientes:hover
+{
+    background: url(../img/clientes_boton_hover.png);
 }
 
 #nav_cierre_der, #nav_cierre_izq
@@ -159,4 +213,32 @@ section{
 .nav_arrow:hover
 {
     background: transparent;
+}
+
+.tabla_galeria
+{
+    text-align: center;
+}
+    
+.tabla_galeria .boton_mas
+{
+    background: url(../img/boton_+.png);
+    cursor: pointer;
+    height:43px;
+    transition:1s;
+    -webkit-transition:1s;
+    width:48px;
+}
+
+.tabla_galeria .boton_mas:hover
+{
+    background: url(../img/boton_+_hover.png);
+    height:43px;
+    width:48px;
+}
+
+.tabla_galeria .boton_mas div
+{
+    height:43px;
+    width:48px;
 }
