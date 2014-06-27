@@ -75,6 +75,14 @@ body{
     width:28000px;
 }
 
+h2
+{
+    color:white;
+    font-family: 'mulilight';
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
 nav
 {
     margin: -105px 0 0 32%;

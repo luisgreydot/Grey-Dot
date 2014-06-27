@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <link rel="stylesheet" href="css/vendor/jquery.fancybox.css"/>
+  <link rel="stylesheet" href="css/vendor/jquery.fancybox-thumbs.css"/>
+  <title>Grey Dot : Agencia de Publicidad</title>
+  <style>
+    label, input{
+      display: block;
+    }
+  </style>
+</head>
+
+
+
+<body style="background:#000"> 
+  <form action="" style="color:white; width:350px">
+    <label for="nombre">Nombre (obligatorio)</label>
+    <input type="text" value="Nombre" name="nombre" id="nombre"/>
+    <label for="nombre">Email (obligatorio)</label>
+    <input type="text" name="email"/>
+    <label for="nombre">Teléfono</label>
+    <input type="text" name="telefono"/>
+    <label for="nombre">Tu mensaje</label>
+    <textarea></textarea>
+    <input type="submit" value="Enviar" />
+  </form>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>
+    var nombre = document.getElementsByName("nombre");
+    function cambiar(){
+      console.log(nombre);
+    }
+    document.getElementById("nombre").onClick = cambiar;
+  </script>
+</body>
+</html>
