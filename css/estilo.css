@@ -138,13 +138,6 @@ section
     height: 280px;
     width:500px;
 }
-    
-#clientes_cuadro #contenedor_clientes
-{
-    display:inline-block;
-    margin: 10px 0 0 0;
-    vertical-align: top;
-}
 
 #clientes_cuadro #clientes_lista
 {
@@ -158,6 +151,13 @@ section
 {
     margin:0;
     padding:0;
+}
+
+#clientes_cuadro #contenedor_clientes
+{
+    display:inline-block;
+    margin: 10px 0 0 0;
+    vertical-align: top;
 }
 
 #clientes_cuadro #separador
@@ -198,6 +198,57 @@ section
 #nav_cierre_izq
 {
     background: url(../img/nav_cierre_izq.png);
+}
+
+#formulario
+{
+    width:350px;
+}
+
+#formulario input, #formulario label 
+{
+    color:white;
+    font-size: .8em;
+    display: block;
+}
+
+#formulario label
+{
+    font-size: .8em;
+    margin: 0 0 .4em 0;
+}
+
+#formulario label span
+{
+    color:#ccc;
+    font-size: .8em;
+}
+
+#formulario input
+{
+    font-family: 'muliregular';
+    margin: 0 0 .8em 0; 
+}
+
+#formulario input, textarea
+{
+    background: rgba(0,0,0,.3);
+    border: none;
+    border-radius: 5px;
+    padding:5px;
+    width: 250px;
+}
+
+#formulario input[type="submit"]{
+    width:80px;
+}
+
+#formulario textarea
+{
+    color: white;
+    font-family: 'muliregular';
+    height:120px;
+    margin:0 0 8px 0;
 }
 
 .icon-arrow-left:before {
@@ -245,8 +296,9 @@ section
     width:48px;
 }
 
-.tabla_galeria .boton_mas div
+.tabla_galeria .boton_mas a
 {
+    display: block;
     height:43px;
     width:48px;
 }

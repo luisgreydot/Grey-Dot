@@ -98,4 +98,8 @@ $(document).ready(function ($){
   $("#toggle_clientes").click(function(){
     $("#clientes_lista").toggle("showOrHide");
   });
+
+  //Carga la validación del formulario
+  $("#formulario").validationEngine();
 });
+

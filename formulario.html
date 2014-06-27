@@ -3,37 +3,68 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
-  <link rel="stylesheet" href="css/vendor/jquery.fancybox.css"/>
-  <link rel="stylesheet" href="css/vendor/jquery.fancybox-thumbs.css"/>
+  <link rel="stylesheet" href="css/vendor/validationEngine.jquery.css">
   <title>Grey Dot : Agencia de Publicidad</title>
   <style>
-    label, input{
+    #formulario
+    {
+      color:white; 
+      width:350px;
+    }
+    #formulario input, #formulario label 
+    {
       display: block;
     }
+
+    #formulario label
+    {
+      font-size: .8em;
+      margin: 0 0 .4em 0;
+    }
+
+    #formulario input
+    {
+      margin: 0 0 .8em 0; 
+    }
+
+    #formulario input, textarea
+    {
+      background: rgba(255,126,0,.5);
+      border: 1px solid #f0960b;
+      border-radius: 5px;
+      padding:5px;
+      width: 150px;
+    }
+
+    #formulario input[type="submit"]{
+       width:80px;
+    }
+
+    #formulario textarea
+    {
+      height:120px;
+      margin:0 0 8px 0;
+    }
+
   </style>
 </head>
-
-
-
-<body style="background:#000"> 
-  <form action="" style="color:white; width:350px">
-    <label for="nombre">Nombre (obligatorio)</label>
-    <input type="text" value="Nombre" name="nombre" id="nombre"/>
-    <label for="nombre">Email (obligatorio)</label>
-    <input type="text" name="email"/>
+<body style="background:#000; font-size:16px;" > 
+  <form action="accion_contacto.php" id="formulario">
+    <label for="nombre">Nombre <span>(obligatorio)</span></label>
+    <input type="text" name="nombre" id="nombre" class="validate[required] text-input"/>
+    <label for="nombre">Email <span>(obligatorio)</span></label>
+    <input type="text" name="email" class="validate[required,custom[email]]"/>
     <label for="nombre">Teléfono</label>
-    <input type="text" name="telefono"/>
+    <input type="text" name="telefono" maxlength="15" class="validate[maxSize[15]]"/>
     <label for="nombre">Tu mensaje</label>
     <textarea></textarea>
     <input type="submit" value="Enviar" />
   </form>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="js/vendor/jquery.validationEngine-es.js"></script>
+  <script src="js/vendor/jquery.validationEngine.js"></script>
   <script>
-    var nombre = document.getElementsByName("nombre");
-    function cambiar(){
-      console.log(nombre);
-    }
-    document.getElementById("nombre").onClick = cambiar;
+    $("#formulario").validationEngine();
   </script>
 </body>
 </html>
