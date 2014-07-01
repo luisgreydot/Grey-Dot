@@ -14,7 +14,7 @@
 			scrollProperty: 'scroll',
 			positionProperty: 'position',
 			horizontalScrolling: true,
-			verticalScrolling: true,
+			verticalScrolling: false,
 			horizontalOffset: 0,
 			verticalOffset: 0,
 			responsive: false,

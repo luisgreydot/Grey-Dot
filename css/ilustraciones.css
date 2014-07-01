@@ -1,0 +1,184 @@
+/*Imágenes de las ilustraciones de cada sección*/
+
+/********************CLIENTES********************/
+
+#clientes_1, #clientes_2, #clientes_3, #clientes_4, #clientes_5, #clientes_6, #clientes_7, #como_pensamos_1, #como_pensamos_2, #como_pensamos_3, #como_pensamos_4, #como_pensamos_5, #contacto_1, #contacto_2, #contacto_3, #contacto_4, #contacto_5, #contacto_6, #contacto_7, #fotografia_1, #fotografia_2, #fotografia_3, #fotografia_4, #fotografia_5, #fotografia_6, #nuestro_trabajo_1, #nuestro_trabajo_2, #nuestro_trabajo_3, #nuestro_trabajo_4, #nuestro_trabajo_5, #stands_1, #stands_2, #stands_3, #stands_4, #stands_5, #stands_6
+{
+  background-repeat: no-repeat;
+}
+
+#clientes_1
+{
+  background-image: url(../img/clientes_1.png);
+}
+#clientes_2
+{
+  background-image: url(../img/clientes_2.png);
+}
+#clientes_3
+{
+  background-image: url(../img/clientes_3.png);
+}
+#clientes_4
+{
+  background-image: url(../img/clientes_4.png);
+}
+#clientes_5
+{
+  background-image: url(../img/clientes_5.png);
+}
+#clientes_6
+{
+  background-image: url(../img/clientes_6.png);
+}
+#clientes_7
+{
+  background-image: url(../img/clientes_7.png);
+}
+
+/********************COMO PENSAMOS********************/
+
+#como_pensamos_1
+{
+  background-image: url(../img/como_pensamos_1.png);
+}
+#como_pensamos_2
+{
+  background-image: url(../img/como_pensamos_2.png);
+}
+#como_pensamos_3
+{
+  background-image: url(../img/como_pensamos_3.png);
+}
+#como_pensamos_4
+{
+  background-image: url(../img/como_pensamos_4.png);
+}
+#como_pensamos_5
+{
+  background-image: url(../img/como_pensamos_5.png);
+}
+
+/********************CONTACTO********************/
+
+#contacto_1
+{
+  background-image: url(../img/contacto_1.png);
+}
+
+#contacto_2
+{
+  background-image: url(../img/contacto_2.png);
+}
+
+#contacto_3
+{
+  background-image: url(../img/contacto_3.png);
+}
+
+#contacto_4
+{
+  background-image: url(../img/contacto_4.png);
+}
+
+#contacto_5
+{
+  background-image: url(../img/contacto_5.png);
+}
+
+#contacto_6
+{
+  background-image: url(../img/contacto_6.png);
+}
+
+#contacto_7
+{
+  background-image: url(../img/contacto_7.png);
+}
+
+/********************FOTOGRAFÍA********************/
+
+#fotografia_1
+{
+  background-image: url(../img/fotografia_1.png);
+}
+
+#fotografia_2
+{
+  background-image: url(../img/fotografia_2.png);
+}
+
+#fotografia_3
+{
+  background-image: url(../img/fotografia_3.png);
+}
+
+#fotografia_4
+{
+  background-image: url(../img/fotografia_4.png);
+}
+
+#fotografia_5
+{
+  background-image: url(../img/fotografia_5.png);
+}
+
+#fotografia_6
+{
+  background-image: url(../img/fotografia_6.png);
+}
+
+/********************NUESTRO TRABAJO********************/
+
+#nuestro_trabajo_1
+{
+  background-image: url(../img/nuestro_trabajo_1.png);
+}
+#nuestro_trabajo_2
+{
+  background-image: url(../img/nuestro_trabajo_2.png);
+}
+#nuestro_trabajo_3
+{
+  background-image: url(../img/nuestro_trabajo_3.png);
+}
+#nuestro_trabajo_4
+{
+  background-image: url(../img/nuestro_trabajo_4.png);
+}
+#nuestro_trabajo_5
+{
+  background-image: url(../img/nuestro_trabajo_5.png);
+}
+
+/********************STANDS********************/
+
+#stands_1
+{
+  background-image: url(../img/stands_1.png);
+}
+
+#stands_2
+{
+  background-image: url(../img/stands_2.png);
+}
+
+#stands_3
+{
+  background-image: url(../img/stands_3.png);
+}
+
+#stands_4
+{
+  background-image: url(../img/stands_4.png);
+}
+
+#stands_5
+{
+  background-image: url(../img/stands_5.png);
+}
+
+#stands_6
+{
+  background-image: url(../img/stands_6.png);
+}

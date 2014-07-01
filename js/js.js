@@ -1,6 +1,6 @@
 $(document).ready(function ($){
 	//Carga la función Stellar que nos dará el efecto parallax.
-	$(function(){
+  $(function(){
       $(window).stellar(); 
   });
 
