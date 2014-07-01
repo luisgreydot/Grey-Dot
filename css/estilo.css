@@ -64,12 +64,13 @@ body, html{
 }
 
 body{
-    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #494342),color-stop(1, #561F09));
-    background-image: -o-linear-gradient(bottom, #494342 0%, #561F09 100%) fixed;
-    background-image: -moz-linear-gradient(bottom, #494342 0%, #561F09 100%) fixed;
-    background-image: -webkit-linear-gradient(bottom, #494342 0%, #561F09 100%) fixed;
-    background-image: -ms-linear-gradient(bottom, #494342 0%, #561F09 100%) fixed;
-    background-image: linear-gradient(to bottom, #494342 0%, #561F09 100%)fixed;
+    background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0, #494342),color-stop(1, #561F09));
+    background-image:-o-linear-gradient(bottom, #494342 0%, #561F09 100%) fixed;
+    background-image:-moz-linear-gradient(bottom, #494342 0%, #561F09 100%) fixed;
+    background-image:-webkit-linear-gradient(bottom, #494342 0%, #561F09 100%) fixed;
+    background-image:-ms-linear-gradient(bottom, #494342 0%, #561F09 100%) fixed;
+    background-image:linear-gradient(to bottom, #494342 0%, #561F09 100%)fixed;
+    background-repeat: repeat-x;
     font-family: 'muliregular';
     font-size: 16px;
     width:14700px;
@@ -77,10 +78,18 @@ body{
 
 h2
 {
-    color:white;
+    color:#ff8515;
     font-family: 'mulilight';
+    font-size: 3em;
     font-weight: normal;
+    line-height: 30px;
     text-transform: uppercase;
+}
+
+h2 span
+{
+    color:white;
+    font-size: .8em;
 }
 
 nav
@@ -134,18 +143,25 @@ section
     width:2000px;
 }
 
+#back_luz{
+    background:url(../img/background_luz_1.png) no-repeat, url(../img/background_luz_2.png) no-repeat 6975px;
+    height: 860px;
+    position: absolute;
+    width:14500px;
+    z-index: -10;
+}
+
 #clientes_cuadro
 {
     display: inline-block;
     height: 280px;
-    margin:370px 0 0 0;
     vertical-align: top;
     width:325px;
 }
 
 #clientes_cuadro #clientes_lista
 {
-    background:rgba(255,255,255,.2);
+    background:rgba(255,255,255,.08);
     height: 190px;
     margin: 0 auto;
     width:220px;
@@ -153,8 +169,11 @@ section
 
 #clientes_cuadro #clientes_lista ul
 {
+    color:white;
+    list-style: none;
     margin:0;
-    padding:0;
+    padding: 1em;
+    text-align: center;
 }
 
 #clientes_cuadro #contenedor_clientes
@@ -207,7 +226,6 @@ section
 #formulario
 {
     display: inline-block;
-    margin: 210px 0 0 100px;
     vertical-align: top;
     width:350px;
 }
@@ -288,6 +306,7 @@ section
 .info_seccion
 {
     display: inline-block;
+    margin: 6em 0 0 0.5em;
     vertical-align: top;
 }
 
@@ -311,7 +330,6 @@ section
 {
     color: white;
     display: inline-block;
-    margin: 380px 0 0 85px;
     text-align: center;
 }
     

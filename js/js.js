@@ -87,6 +87,50 @@ $(document).ready(function ($){
     });
   });
 
+  $("#fotografia_galeria").click(function() {
+    $.fancybox.open([
+      {
+        href : 'img/1_b.jpg',
+        title : 'Proyecto 1'
+      }, {
+        href : 'img/2_b.jpg',
+        title : 'Proyecto 2'
+      }, {
+        href : 'img/3_b.jpg',
+        title : 'Proyecto 3'
+      }
+    ], {
+      helpers : {
+        thumbs : {
+          width: 75,
+          height: 50
+        }
+      }
+    });
+  });
+
+  $("#fotografia_stand").click(function() {
+    $.fancybox.open([
+      {
+        href : 'img/1_b.jpg',
+        title : 'Proyecto 1'
+      }, {
+        href : 'img/2_b.jpg',
+        title : 'Proyecto 2'
+      }, {
+        href : 'img/3_b.jpg',
+        title : 'Proyecto 3'
+      }
+    ], {
+      helpers : {
+        thumbs : {
+          width: 75,
+          height: 50
+        }
+      }
+    });
+  });
+
   //Activa el scroll del cuadro de clientes
   $(function(){
     $('.nano').nanoScroller({
