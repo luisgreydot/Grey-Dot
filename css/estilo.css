@@ -176,18 +176,17 @@ section
     text-align: center;
 }
 
+#clientes_cuadro #clientes_lista ul li
+{
+    margin: 0 0 1em 0
+}
+
 #clientes_cuadro #contenedor_clientes
 {
     display:inline-block;
     margin: 10px 0 0 0;
     vertical-align: top;
-}
-
-#clientes_cuadro #separador
-{
-    background:#fff;
-    height:1px;
-    width:295px;
+    width: 300px;
 }
 
 #clientes_cuadro #toggle_clientes
@@ -206,6 +205,45 @@ section
 #clientes_cuadro #toggle_clientes:hover
 {
     background: url(../img/clientes_boton_hover.png);
+}
+
+#como_pensamos_cuadro
+{
+    display: inline-block;
+    height: 400px;
+    vertical-align: top;
+    width:325px;
+}
+
+#como_pensamos_cuadro #como_pensamos_texto
+{
+    background: rgba(0,0,0,.5);
+    height: 340px;
+    margin: 0 auto;
+    width:330px;
+}
+
+#como_pensamos_cuadro #como_pensamos_texto p
+{
+    color:white;
+    padding: .5em 1em;
+    text-align: center;
+}
+
+#como_pensamos_cuadro #contenedor_como_pensamos
+{
+    margin:0 auto;
+    width: 400px;
+}
+
+#como_pensamos_cuadro .separador
+{
+    width:400px;
+}
+
+#img_home
+{
+    margin: 4em 0 0 20em;
 }
 
 #nav_cierre_der, #nav_cierre_izq
@@ -356,3 +394,11 @@ section
     height:43px;
     width:48px;
 }
+
+.separador
+{
+    background:#fff;
+    height:1px;
+    width:295px;
+}
+
