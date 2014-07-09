@@ -361,11 +361,6 @@ $(document).ready(function ($){
     });
   });
 
-  //Activa el botón de cerrado y abierto
-  $("#toggle_clientes").click(function(){
-    $("#clientes_lista").toggle("showOrHide");
-  });
-
   //Carga la validación del formulario
   $("#formulario").validationEngine();
 });
