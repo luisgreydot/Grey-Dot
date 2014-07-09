@@ -94,48 +94,16 @@ h2 span
 
 nav
 {
-    margin: -105px 0 0 32%;
+    font-size: .9em;
+    margin-left: 32%;
+    margin-top: -112px;
     position: fixed;
-    top:100%;
-    z-index: 100;
+    top: 100%;
 }
 
-nav ul{
-    list-style: none;
-}
-
-nav ul li{
-    background: url(../img/nav_background.png) no-repeat;
+nav ul li
+{
     float: left;
-    height: 69px;
-    overflow: hidden;
-    text-align: center;
-    vertical-align: top;
-    width: 82px;
-    transition: 1s;
-    -moz-transition: background-image 1s;
-}
-
-nav ul li:hover
-{
-    background: url(../img/nav_background_hover.png) no-repeat;
-}
-
-nav ul li a
-{
-    color:rgba(255,255,255,0.3);
-    display: block;
-    font-size: .8em;
-    height: 100%;
-    padding: 38px 0 0 0;
-    text-decoration: none;
-    -moz-transition: 1s;
-    transition: 1s;
-}
-
-nav ul li a:hover
-{
-    color:rgba(255,255,255,1);
 }
 
 section
@@ -248,21 +216,6 @@ section
     margin: 5em 0 0 20em;
 }
 
-#nav_cierre_der, #nav_cierre_izq
-{   
-    width: 22px;
-}
-
-#nav_cierre_der
-{
-    background: url(../img/nav_cierre_der.png);
-}
-
-#nav_cierre_izq
-{
-    background: url(../img/nav_cierre_izq.png);
-}
-
 #formulario
 {
     display: inline-block;
@@ -314,6 +267,60 @@ section
     font-family: 'muliregular';
     height:120px;
     margin:0 0 8px 0;
+}
+
+#nav_cierre_der, #nav_cierre_izq
+{   
+    height: 34px;
+    width: 22px;
+}
+
+#nav_cierre_der
+{
+    background: url(../img/nav_cierre_der.png);
+    background-position: 0 1px;
+}
+
+#nav_cierre_izq
+{
+    background: url(../img/nav_cierre_izq.png);
+    background-position: 0 1px;
+}
+
+.arrow 
+{
+    background: url(../img/nav_background_sprite.png) no-repeat;
+    color:rgba(255,255,255,.3);
+    display: inline-block;
+    height: 34px;
+    padding: 38px 0 0 0;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    width: 82px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.arrow:hover
+{
+    color:rgba(255,255,255,1);
+}
+
+.arrow span {
+    background: url(../img/nav_background_sprite.png) no-repeat;
+    background-position: 0px -67px;
+    opacity: 0;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition:    opacity 0.5s;
+    -o-transition:      opacity 0.5s;
+}
+
+.arrow span:hover {
+    opacity: 1;
 }
 
 .contenedor
