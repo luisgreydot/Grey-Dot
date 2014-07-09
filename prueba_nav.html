@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Grey Dot : Agencia de Publicidad</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Agencia de Publicidad" />
+        <link rel="icon" href="img/favicon.ico">
+        <script src="js/vendor/prefixfree.js"></script>
+        <link rel="stylesheet" href="css/vendor/normalize.min.css">
+        <style>
+            nav ul li
+            {
+                float: left;
+            }
+
+            .arrow 
+            {
+                color:rgba(255,255,255,.3);
+                text-decoration: none;
+                text-align: center;
+                display: inline-block;
+                padding: 38px 0 0 0;
+                position: relative;
+                width: 82px;
+                height: 34px;
+                background: url(img/nav_background_sprite.png) no-repeat;
+                -webkit-transition: 0.5s;
+                -moz-transition: 0.5s;
+                -o-transition: 0.5s;
+            }
+            
+            .arrow:hover
+            {
+                color:rgba(255,255,255,1);
+            }
+
+            .arrow span {
+                position: absolute;
+                top: 0; left: 0; bottom: 0; right: 0;
+                background: url(img/nav_background_sprite.png) no-repeat;
+                background-position: 0px -67px;
+                opacity: 0;
+                -webkit-transition: opacity 0.5s;
+                -moz-transition:    opacity 0.5s;
+                -o-transition:      opacity 0.5s;
+            }
+
+            .arrow:hover span {
+                opacity: 1;
+            }
+
+        </style>
+    </head>
+    <body style="background:#000">
+        <nav>
+            <ul>
+                <li><a href="#" class="arrow">Texto<span></span></a></li>
+                <li><a href="#" class="arrow">Texto<span></span></a></li>
+                <li><a href="#" class="arrow">Mucho<br/>Texto<span></span></a></li>
+            </ul>
+        </nav>
+        <!--/**JAVASCRIPT**/-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="js/js.js"></script>
+    </body>
+</html>
