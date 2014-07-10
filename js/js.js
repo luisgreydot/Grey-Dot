@@ -15,12 +15,12 @@ $(document).ready(function ($){
       });
   });
 
-  //Carga el scroll del cuadro de clientes
+  /*Carga el scroll del cuadro de clientes
   $(function(){
     $('.nano').nanoScroller({
       preventPageScrolling: true
     });
-  });
+  });*/
 
   //Carga el efecto lightbox de las galerías
   $("#nuestro_trabajo_print").click(function() {
