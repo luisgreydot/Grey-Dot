@@ -7,15 +7,10 @@
         <meta charset="UTF-8"/>
         <meta name="description" content="Agencia de Publicidad" />
         <link rel="icon" href="img/favicon.ico">
-        <script src="js/vendor/prefixfree.js"></script>
         <link rel="stylesheet" href="css/vendor/normalize.min.css">
         <link rel="stylesheet" href="css/estilo.css"/>
-        <link rel="stylesheet" href="css/vendor/jquery.fancybox.css"/>
-        <link rel="stylesheet" href="css/vendor/jquery.fancybox-thumbs.css"/>
-        <link rel="stylesheet" href="css/vendor/validationEngine.jquery.css">
     </head>
     <body>
-        <div id="back_luz"></div>
         <nav>
             <ul>
                 <!--<li class="nav_arrow"><a href="#"><span class="icon-arrow-left"></span></a></li>-->
@@ -47,20 +42,6 @@
                     <img src="img/como_pensamos_5.png" data-stellar-ratio="2"/>
                 </div>
             </article>
-            <article class="info_seccion">
-                <h2><span>Cómo</span><br/> pensamos</h2>
-                <div id="como_pensamos_cuadro">
-                    <div id="contenedor_como_pensamos">
-                        <div class="separador"></div>
-                        <div id="como_pensamos_texto">
-                            <p>Las cosas más grandes tienen los orígenes más simples.</p>
-                            <p>Así como una sucesión de puntos forma una línea y una sucesión de líneas da origen a las formas, una simple idea se convierte en un gran cambio para una marca.</p>
-                            <p>Partimos de lo básico y no lo soltamos hasta convertirlo en algo mucho más grande y ni aún así lo soltamos.</p>
-                            <p>Partimos de un pequeño punto gris y lo convertimos en resultados.</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
         </section>
 
         <!--/*************CLIENTES**************/-->
@@ -76,20 +57,6 @@
                     <img src="img/clientes_7.png" data-stellar-ratio="2"/>
                 </div>
             </article>
-            <article class="info_seccion">
-                <h2>Clientes</h2>
-                <div id="clientes_cuadro">
-                    <div id="contenedor_clientes">
-                        <div class="separador"></div>
-                        <div id="clientes_lista">
-                            <img src="img/clientes_logo_sanborns.png" alt="Nuestros Clientes: Sanborns">
-                            <img src="img/clientes_logo_toyota.png" alt="Nuestros Clientes: Toyota">
-                            <img src="img/clientes_logo_bx+.png" alt="Nuestros Clientes: Ve Por Más">
-                            <img src="img/clientes_logo_philips.png" alt="Nuestros Clientes: Philips">
-                        </div>
-                    </div>
-                </div>
-            </article>
         </section>
 
         <!--/**********NUESTRO TRABAJO**********/-->
@@ -102,23 +69,6 @@
                     <img src="img/nuestro_trabajo_4.png" data-stellar-ratio="4"/>
                     <img src="img/nuestro_trabajo_5.png" data-stellar-ratio="2"/>
                 </div>
-            </article>
-            <article class="info_seccion">
-                <h2><span>Nuestro</span><br/>trabajo</h2>
-                <table class="tabla_galeria">
-                    <tr>
-                      <td>Print</td>
-                      <td class="boton_mas"><a id="nuestro_trabajo_print" href="javascript:;"></a></td>
-                    </tr>
-                    <tr>
-                      <td>TV</td>
-                      <td class="boton_mas"><a id="nuestro_trabajo_tv" class="fancybox-media" href="//www.youtube.com/embed/pyMTSr8hbow"></a></td>
-                    </tr>
-                    <tr>
-                      <td>Radio</td>
-                      <td class="boton_mas"><a id="nuestro_trabajo_radio" href="javascript:;"></a></td>
-                    </tr>
-                </table>
             </article>
         </section>
 
@@ -133,16 +83,6 @@
                     <img src="img/fotografia_5.png" data-stellar-ratio="2"/>
                     <img src="img/fotografia_6.png" data-stellar-ratio="4"/>
                 </div> 
-            </article>
-
-            <article class="info_seccion">
-                <h2>Fotografía</h2>
-                <table class="tabla_galeria">
-                    <tr>
-                      <td>Ver trabajo</td>
-                      <td class="boton_mas"><a id="fotografia_galeria" href="javascript:;"></a></td>
-                    </tr>
-                </table>
             </article>         
         </section>
 
@@ -157,16 +97,7 @@
                     <img src="img/stands_5.png" data-stellar-ratio="2"/>
                     <img src="img/stands_6.png" data-stellar-ratio="4"/>
                 </div> 
-            </article>
-            <article class="info_seccion">
-                <h2>Stand</h2>
-                <table class="tabla_galeria">
-                    <tr>
-                      <td>Ver trabajo</td>
-                      <td class="boton_mas"><a id="fotografia_stand" href="javascript:;"></a></td>
-                    </tr>
-                </table>
-            </article>          
+            </article>      
         </section>
 
         <!--/**********CONTACTO**********/-->
@@ -183,20 +114,6 @@
                     <img src="img/contacto_8.png" data-stellar-ratio="2"/>
                 </div> 
             </article>
-            <article class="info_seccion">
-                <h2>Contacto</h2>
-                <form action="accion_contacto.php" id="formulario" method="post" accept-charset="UTF-8">
-                    <label for="nombre">Nombre <span>(obligatorio)</span></label>
-                    <input type="text" name="nombre" id="nombre" class="validate[required] text-input"/>
-                    <label for="nombre">Email <span>(obligatorio)</span></label>
-                    <input type="text" name="email" class="validate[required,custom[email]]"/>
-                    <label for="nombre">Teléfono</label>
-                    <input type="text" name="telefono" maxlength="15" class="validate[maxSize[15]]"/>
-                    <label for="nombre">Tu mensaje</label>
-                    <textarea id="mensaje" name="mensaje"></textarea>
-                    <input type="submit" value="Enviar" />
-                </form>
-            </article>
         </section>
         <!--/**JAVASCRIPT**/-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -209,5 +126,8 @@
         <script src="js/vendor/jquery.validationEngine-es.js"></script>
         <script src="js/vendor/jquery.validationEngine.js"></script>
         <script src="js/js.js"></script>
+        <script>
+            
+        </script>
     </body>
 </html>
