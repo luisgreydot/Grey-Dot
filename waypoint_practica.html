@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Prueba</title>
+		<style>
+			body
+			{
+				font-size: 16px;
+			}
+
+			nav{
+				top: 100%;
+				margin-top: -111px;
+				z-index: 42;
+				padding: 1em 3em;
+				filter: alpha(opacity=80); /* IE6-IE8 */
+				position: fixed;
+			    width: 928px;
+			    border-top-left-radius: 14px 7px;
+			    border-top-right-radius: 14px 7px;
+			}
+
+			nav li{
+			    float: left;
+			    list-style: none;
+            }
+
+			nav li a {
+				text-decoration: none;
+				font-size: .9em;
+				color: #2c2e24;
+				font-weight: bold;
+				display: inline-block;
+				width: 5em; text-align: center;
+				
+				-webkit-border-radius: 1px;
+				-moz-border-radius: 1px;
+				border-radius: 1px;
+			}
+
+			nav li a.selected{
+				color: rgba(200,0,0,1);
+				opacity: 1;
+			}
+
+			.arrow
+			{
+			    background: url(img/nav_background_sprite.png) no-repeat;
+			    color:rgba(200,0,0,.3);
+			    display: inline-block;
+			    height: 34px;
+			    padding: 38px 0 0 0;
+			    position: relative;
+			    text-decoration: none;
+			    text-align: center;
+			    width: 82px;
+			    -webkit-transition: 0.5s;
+			    -moz-transition: 0.5s;
+			    -o-transition: 0.5s;  			
+			}
+
+			.arrow:hover
+			{
+			    color:rgba(200,0,0,1);
+			}
+
+			.arrow span {
+			    background: url(img/nav_background_sprite.png) no-repeat;
+			    background-position: 0px -67px;
+			    opacity: 0;
+			    position: absolute;
+			    top: 0; left: 0; bottom: 0; right: 0;
+			    -webkit-transition: opacity 0.5s;
+			    -moz-transition:    opacity 0.5s;
+			    -o-transition:      opacity 0.5s;
+			}
+
+			.arrow span:hover, .selected_span{
+    			opacity: 1 !important;
+			}
+
+			/*******************************/
+			section 
+			{
+				width:900px;
+				float: left;
+				margin:0 50px;
+			}
+
+            .sticky{
+ 				position: fixed;
+  				top: 0;
+			}
+
+			.contenedor{
+				width:10000px;
+			}
+
+			.nav-container { margin-bottom: 2em; width:100%;margin-right:-2em }
+
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+	      	<div class="nav-container">
+		      	<nav>
+		      		<ul>
+	    				<li><a class="nav-link arrow" href="#home">Home <span></span></a></li>
+	   					<li><a class="nav-link arrow" href="#como_pensamos">Como pensamos <span></span></a></li>
+	   					<li><a class="nav-link arrow" href="#clientes">Clientes <span></span></a></li>
+	   					<li><a class="nav-link arrow" href="#nuestro_trabajo">Nuestro Trabajo <span></span></a></li>
+	   					<li><a class="nav-link arrow" href="#fotografia">Fotografia <span></span></a></li>
+	   					<li><a class="nav-link arrow" href="#stand">Stands <span></span></a></li>
+	  				</ul>
+		      	</nav>
+	      	</div>
+	      	<div class="contenedor">
+		      	<section id="home">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies</section>
+	      	
+		      	<section id="como_pensamos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies</section>
+
+		      	<section id="clientes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies</section>
+
+		      	<section id="nuestro_trabajo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies</section>
+
+		      	<section id="fotografia">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies</section>
+
+		      	<section id="stand">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies
+		  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed mauris enim. Proin eget nulla aliquam, consequat odio quis, accumsan nulla. Ut in posuere purus. Maecenas vitae massa massa. Nunc varius venenatis justo a scelerisque. Maecenas lobortis, tortor ac molestie ultricies</section>
+    		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/vendor/waypoints.min.js"></script>
+		<script>
+			$(function() {
+  				var sections = $('section');
+  				var navigation_links = $('nav a');
+  				var navigation_span = $('.arrow span')
+  				sections.waypoint({
+    				handler: function(event, direction) {
+      					var active_section;
+						active_section = $(this);
+						if (direction === "right") active_section = active_section.prev();
+						var active_link = $('nav a[href="#' + active_section.attr("id") + '"]');
+						var active_span = $('nav a[href="#' + active_section.attr("id") + '"] span');
+						navigation_links.removeClass("selected");
+						navigation_span.removeClass("selected_span");
+						active_link.addClass("selected");
+						active_span.addClass("selected_span");
+   				 	},
+			    	horizontal: true
+			  	});
+			});
+		</script>
+	</body>
+</html>

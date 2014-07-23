@@ -101,9 +101,15 @@ nav
     top: 100%;
 }
 
+
 nav ul li
 {
     float: left;
+}
+
+nav ul li a.selected
+{
+    color:rgba(255,255,255,1);
 }
 
 section
@@ -277,6 +283,11 @@ section
     background-position: 0 1px;
 }
 
+.active
+{
+    color:rgba(255,255,255,1);
+}
+
 .arrow 
 {
     background: url(../img/nav_background_sprite.png) no-repeat;
@@ -309,8 +320,8 @@ section
     -o-transition:      opacity 0.5s;
 }
 
-.arrow span:hover {
-    opacity: 1;
+.arrow span:hover,.selected_span {
+    opacity: 1!important;
 }
 
 .contenedor
