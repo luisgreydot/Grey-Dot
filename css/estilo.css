@@ -207,6 +207,23 @@ section
     width: 100%;;
 }
 
+#datos_empresa
+{
+    color:white;
+    font-size: .9em;
+}
+
+#datos_empresa a
+{
+    color: white;
+    text-decoration: none;
+}
+
+#datos_empresa strong 
+{
+    color:#ff8515;
+}
+
 #img_home
 {
     margin: 5em 0 0 20em;

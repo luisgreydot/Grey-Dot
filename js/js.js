@@ -10,12 +10,42 @@ $(document).ready(function ($){
           var $anchor = $(this);
           $('html, body').stop().animate({
               scrollLeft: $($anchor.attr('href')).offset().left
-          }, 2000);
+          }, 2000, function(){
+			  activarBoton();
+		  });
           event.preventDefault();
       });
   });
 
+
+function activarBoton(){
+	
+	var sections = $('section');
+      var navigation_links = $('nav a');
+      var navigation_span = $('.arrow span')
+      sections.waypoint({
+        handler: function(event, direction) {
+          var active_section = $(this);
+          var active_link = $('nav a[href="#' + active_section.attr("id") + '"]');
+          var active_span = $('nav a[href="#' + active_section.attr("id") + '"] span');
+          navigation_links.removeClass("selected");
+          navigation_span.removeClass("selected_span");
+          active_link.addClass("selected");
+          active_span.addClass("selected_span");
+        },
+		    offset:'25%',
+        horizontal: true, 
+      });
+}
+
+
+$(document).ready(function(e) {
+    $(window).scroll(function(e) {
+        activarBoton();
+    });
+});
   //Función para hacer que las secciones queden prendidas cuando estan en una sección
+  /*
   $(function() {
       var sections = $('section');
       var navigation_links = $('nav a');
@@ -32,7 +62,7 @@ $(document).ready(function ($){
         },
         horizontal: true, 
       });
-  });
+  });*/
 
   //Carga el efecto lightbox de las galerías
   $("#nuestro_trabajo_print").click(function() {
