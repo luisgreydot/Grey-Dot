@@ -245,8 +245,9 @@ section
 
 #formulario label
 {
-    font-size: .8em;
-    margin: 0 0 .4em 0;
+	font-size: .8em;
+	margin: 0 0 .4em 0;
+	clear: both;
 }
 
 #formulario label span
@@ -263,11 +264,12 @@ section
 
 #formulario input, textarea
 {
-    background: rgba(0,0,0,.5);
-    border: none;
-    border-radius: 5px;
-    padding:5px;
-    width: 250px;
+	background: rgba(0,0,0,.5);
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+	width: 250px;
+	display: block;
 }
 
 #formulario input[type="submit"]{
@@ -428,4 +430,3 @@ section
     height:1px;
     width:100%;
 }
-

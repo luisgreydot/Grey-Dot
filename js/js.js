@@ -17,53 +17,26 @@ $(document).ready(function ($){
       });
   });
 
-
-function activarBoton(){
+    //Función para hacer que las secciones queden prendidas cuando estan en una sección
+	function activarBoton(){
+		var sections = $('section');
+		  var navigation_links = $('nav a');
+		  var navigation_span = $('.arrow span')
+		  sections.waypoint({
+			handler: function(event, direction) {
+			  var active_section = $(this);
+			  var active_link = $('nav a[href="#' + active_section.attr("id") + '"]');
+			  var active_span = $('nav a[href="#' + active_section.attr("id") + '"] span');
+			  navigation_links.removeClass("selected");
+			  navigation_span.removeClass("selected_span");
+			  active_link.addClass("selected");
+			  active_span.addClass("selected_span");
+			},
+				offset:'25%',
+			horizontal: true, 
+		  });
+	}
 	
-	var sections = $('section');
-      var navigation_links = $('nav a');
-      var navigation_span = $('.arrow span')
-      sections.waypoint({
-        handler: function(event, direction) {
-          var active_section = $(this);
-          var active_link = $('nav a[href="#' + active_section.attr("id") + '"]');
-          var active_span = $('nav a[href="#' + active_section.attr("id") + '"] span');
-          navigation_links.removeClass("selected");
-          navigation_span.removeClass("selected_span");
-          active_link.addClass("selected");
-          active_span.addClass("selected_span");
-        },
-		    offset:'25%',
-        horizontal: true, 
-      });
-}
-
-
-$(document).ready(function(e) {
-    $(window).scroll(function(e) {
-        activarBoton();
-    });
-});
-  //Función para hacer que las secciones queden prendidas cuando estan en una sección
-  /*
-  $(function() {
-      var sections = $('section');
-      var navigation_links = $('nav a');
-      var navigation_span = $('.arrow span')
-      sections.waypoint({
-        handler: function(event, direction) {
-          var active_section = $(this);
-          var active_link = $('nav a[href="#' + active_section.attr("id") + '"]');
-          var active_span = $('nav a[href="#' + active_section.attr("id") + '"] span');
-          navigation_links.removeClass("selected");
-          navigation_span.removeClass("selected_span");
-          active_link.addClass("selected");
-          active_span.addClass("selected_span");
-        },
-        horizontal: true, 
-      });
-  });*/
-
   //Carga el efecto lightbox de las galerías
   $("#nuestro_trabajo_print").click(function() {
     $.fancybox.open([
@@ -395,7 +368,14 @@ $(document).ready(function(e) {
       }
     });
   });
-
+	
+  //Activa el Qaptcha
+  $('.QapTcha').QapTcha({
+	  disabledSubmit:true,
+	  autoRevert:true,
+	  autoSubmit:false
+  });
+  
   //Activa el scroll del cuadro de clientes
   $(function(){
     $('.nano').nanoScroller({
