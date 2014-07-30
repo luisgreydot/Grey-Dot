@@ -37,6 +37,44 @@ $(document).ready(function ($){
 		  });
 	}
 	
+  //Activa las flechas laterales 
+  $(function(){
+	var step = 200;
+	var scrolling = false;	
+	$("#scrollizq").bind("click", function(event) {
+		event.preventDefault();
+		$("body").animate({
+			scrollLeft: "-=" + step + "px"
+		});
+	}).bind("mouseover", function(event) {
+		scrolling = true;
+		scrollContent("left");
+	}).bind("mouseout", function(event) {
+		scrolling = false;
+	});
+	$("#scrollder").bind("click", function(event) {
+		event.preventDefault();
+		$("body").animate({
+			scrollLeft: "+=" + step + "px"
+		});
+	}).bind("mouseover", function(event) {
+		scrolling = true;
+		scrollContent("right");
+	}).bind("mouseout", function(event) {
+		scrolling = false;
+	});
+	function scrollContent(direction) {
+		var amount = (direction === "left" ? "-=20px" : "+=20px");
+		$("body").animate({
+			scrollLeft: amount
+		}, 1, function() {
+			if (scrolling) {
+			scrollContent(direction);
+			}
+		});
+	}
+  })
+    
   //Carga el efecto lightbox de las galerías
   $("#nuestro_trabajo_print").click(function() {
     $.fancybox.open([
@@ -117,20 +155,20 @@ $(document).ready(function ($){
     });
   });
 
-  $('#nuestro_trabajo_tv')
-        .attr('rel', 'media-gallery')
-        .fancybox({
-          openEffect : 'none',
-          closeEffect : 'none',
-          prevEffect : 'none',
-          nextEffect : 'none',
-
-          arrows : false,
-          helpers : {
-            media : {},
-            buttons : {}
-          }
-        });
+ $("#nuestro_trabajo_tv").click(function() {
+    $.fancybox.open([
+      {
+        href : '//www.youtube.com/embed/pyMTSr8hbow',
+        title : 'Institucional 1'
+      },
+	  {
+        href : '//www.youtube.com/embed/7f1q0TitOt0',
+        title : 'Institucional 2'
+      } 
+    ], {
+		'type' : 'swf'
+    });
+  });
 
   $("#nuestro_trabajo_radio").click(function() {
     $.fancybox.open([

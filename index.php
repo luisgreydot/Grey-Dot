@@ -41,6 +41,8 @@
     </head>
     <body>
         <div id="back_luz"></div>
+        <a id="scrollizq" href="#"></a>
+		<a id="scrollder" href="#"></a>
         <nav>
             <ul>
                 <!--<li class="nav_arrow"><a href="#"><span class="icon-arrow-left"></span></a></li>-->
@@ -58,7 +60,15 @@
         </nav>
         <!--/****************HOME***************/-->
         <section id="home">
-            <img src="img/grey_dot_logo.png" alt="Grey Dot: Agencia de Publicidad" id="img_home">
+            <article id="ilustracion_home" data-stellar-offset-parent="true">
+            	<div class="contenedor" data-stellar-horizontal-offset="10">
+                	<img src="img/grey_dot_logo_1.png" data-stellar-ratio="1"/>
+                    <img src="img/grey_dot_logo_2.png" data-stellar-ratio="1"/>
+                    <img src="img/grey_dot_logo_3.png" data-stellar-ratio="1.3"/>
+                    <img src="img/grey_dot_logo_4.png" data-stellar-ratio="1.2"/>
+                    <img src="img/grey_dot_logo_5.png" data-stellar-ratio="1.6"/>
+                </div>
+            </article>
         </section>
         
         <!--/***********COMO PENSAMOS***********/-->
@@ -141,7 +151,7 @@
                     </tr>
                     <tr>
                       <td>TV</td>
-                      <td class="boton_mas"><a id="nuestro_trabajo_tv" class="fancybox-media" href="//www.youtube.com/embed/pyMTSr8hbow"></a></td>
+                      <td class="boton_mas"><a id="nuestro_trabajo_tv" class="fancybox-media"></a></td>
                     </tr>
                     <tr>
                       <td>Radio</td>
@@ -244,6 +254,7 @@
         <script src="js/vendor/jquery.stellar.js"></script>
         <script src="js/vendor/waypoints.min.js"></script>
         <script src="js/vendor/jquery.fancybox.js"></script>
+        <script src="js/vendor/jquery.fancybox.pack.js"></script>
         <script src="js/vendor/jquery.fancybox-thumbs.js"></script>
         <script src="js/vendor/jquery.fancybox-media.js"></script>
         <script src="js/vendor/jquery.nanoscroller.js"></script>

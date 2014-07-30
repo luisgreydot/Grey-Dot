@@ -224,9 +224,14 @@ section
     color:#ff8515;
 }
 
-#img_home
+#ilustracion_home
 {
-    margin: 5em 0 0 20em;
+	display: inline-block;
+	height: 773px;
+	margin: 24px 0 0 255px;
+	position: relative;
+	width: 814px;
+	z-index: -3;
 }
 
 #formulario
@@ -300,6 +305,38 @@ section
 {
     background: url(../img/nav_cierre_izq.png);
     background-position: 0 1px;
+}
+
+#scrollizq, #scrollder
+{
+	height: 50px;
+	margin-top: -10px;
+	opacity:.4;
+	position: fixed;
+	top: 50%;
+	width: 40px;
+	transition: .5s all;
+}
+
+#scrollizq:hover, #scrollder:hover
+{
+	opacity:1;
+}
+
+#scrollizq
+{
+	background-image: url(../img/fechas_laterales.png);
+	background-position: 0% -5px;
+	left: 0;
+	margin-left: 10px;
+}
+
+#scrollder
+{
+	background-image: url(../img/fechas_laterales.png);
+	background-position: -40px -5px;
+	left: 100%;
+	margin-left: -45px;
 }
 
 .active

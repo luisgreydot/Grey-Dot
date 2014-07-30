@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Documento sin título</title>
+<style>
+  body{
+		height:5000px;
+	}
+  div.demo {
+    background: #ccc none repeat scroll 0 0;
+    border: 3px solid #666;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    width: 200px;
+  }
+  p {
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid #666;
+    width: 1000px;
+    height: 20000px;
+  }
+  
+  #nav{
+	position:fixed;  
+	}
+#contenedor {
+	margin: 0px;
+	padding: 0px;
+	height: 500px;
+	width: 7000px;
+}
+section {
+	width: 500px;
+	height: 500px;
+	display: inline-block;
+}
+
+#scrollizq, #scrollDown
+{
+	width: 70px;
+	position: fixed;
+	height: 50px;
+	margin-top: -10px;
+	margin-left: -20px;
+	top: 50%;
+}
+
+#scrollizq
+{
+	background-image: url('img/elementos_lightbox/fancybox_sprite.png');
+	left: 0;
+	background-position: 0% -151px;
+}
+
+#scrollDown
+{
+	left: 94%;
+	background-image: url(img/elementos_lightbox/fancybox_sprite.png);
+	background-position: 0 -79px;
+}
+
+</style>
+</head>
+
+<body>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<a id="scrollizq" href="#"></a>
+	<a id="scrollDown" href="#"></a>
+<div id="contenedor">
+  <section>Colocar aquí el contenido de la nueva etiqueta section</section>
+  <section>Colocar aquí el contenido de la nueva etiqueta section</section>
+  <section>Colocar aquí el contenido de la nueva etiqueta section</section>
+  <section>Colocar aquí el contenido de la nueva etiqueta section</section>
+  <section>Colocar aquí el contenido de la nueva etiqueta section</section>
+  <section>Colocar aquí el contenido de la nueva etiqueta section</section>
+  <section>Colocar aquí el contenido de la nueva etiqueta section</section>
+</div>
+<script>
+	var step = 100;
+	var scrolling = false;
+	
+	// Wire up events for the 'scrollizq' link:
+	$("#scrollizq").bind("click", function(event) {
+		event.preventDefault();
+		// Animates the scrollTop property by the specified
+		// step.
+		$("body").animate({
+			scrollLeft: "-=" + step + "px"
+		});
+	}).bind("mouseover", function(event) {
+		scrolling = true;
+		scrollContent("left");
+	}).bind("mouseout", function(event) {
+		scrolling = false;
+	});
+	
+	
+	$("#scrollDown").bind("click", function(event) {
+		event.preventDefault();
+		$("body").animate({
+			scrollLeft: "+=" + step + "px"
+		});
+	}).bind("mouseover", function(event) {
+		scrolling = true;
+		scrollContent("right");
+	}).bind("mouseout", function(event) {
+		scrolling = false;
+	});
+	
+	function scrollContent(direction) {
+		var amount = (direction === "left" ? "-=10px" : "+=10px");
+		$("body").animate({
+			scrollLeft: amount
+		}, 1, function() {
+			if (scrolling) {
+				scrollContent(direction);
+			}
+		});
+	}
+</script>
+</body>
+</html>

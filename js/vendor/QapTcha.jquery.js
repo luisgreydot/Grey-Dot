@@ -12,7 +12,7 @@ jQuery.QapTcha = {
 	build : function(options)
 	{
         var defaults = {
-			txtLock : 'Antes de empezar, favor de mover la flecha a la derecha',
+			txtLock : 'Mueve la flecha a la derecha',
 			txtUnlock : 'Gracias. Puede continuar',
 			disabledSubmit : true,
 			autoRevert : true,
